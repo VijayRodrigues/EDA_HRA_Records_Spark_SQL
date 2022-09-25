@@ -18,25 +18,33 @@ The idea is to extrapolate the existing data - in Jupyter Notebook / or any ide 
 
 ## Getting Started
 
-* 1) A database by the name "amazon_products" is already created (manually) in PgAdmin
+* 1) A table by the name "HRA_Records" is created with the mentioned excel file within "EMP_DETAILS" database in SQL Server.
 * <br>
-![db_name](https://user-images.githubusercontent.com/72039550/192081173-5af21c9a-634b-4228-b65c-dcd308f559f2.jpg)
+* ![pic1](https://user-images.githubusercontent.com/72039550/192141984-aa8778db-e093-48d1-a0ea-886673b4e2da.png)
 
 <hr>
 
-* 2) a table by the name "Amazon_Laptops" is created through the script itself - using SqlAlchemy package.
+* 2) After necessary libraries are loaded, I have configured and named the app as "SparkODBC" in Spark as shown below
 * <br>
+![pic2](https://user-images.githubusercontent.com/72039550/192142048-caca28b1-a067-48a8-977e-1592228d8961.png)
 
-![tabl](https://user-images.githubusercontent.com/72039550/192104858-c019320d-cb70-4c1d-9899-156ceb4e123d.png)
 <br>
 <hr>
+3) The following code show's how to connect to datasbe using pyodbc and then the concat values are saved to spark dataframe called "HRA_Records". To avoid / reduce memory issues that may occur, only 1 million records are being downloade din chunks so the memory si released after every download.
+<br>
+With the help of predefined Spark Schema, the data that is being saved in Spark Dataframe now has specific datatypes suited to its needs.
+<br>
 
+![pic3](https://user-images.githubusercontent.com/72039550/192142272-b574f94a-faca-431e-ae88-2ce3eb7c90ce.png)
+<br><br>
 
 ## Executing program
 
-* The following query  **SELECT * FROM public."Amazon_Laptops"** displays all the records that were appended to the table "Amazon_Laptops"
-<br><br>
-![querytab](https://user-images.githubusercontent.com/72039550/192105060-ded88e7f-b170-4c0f-9bfd-1df9b946ffc7.png)
+* The data is currently in the form of dataframe and to query on the same I have used the function **CreateOrReplaceTempView** which creates a virtual table from the existing dataframe. Then we can perform functions / queries within **spark.sql()** that are pretty similar to that of **regular SQL**
+<br>
+![pic4](https://user-images.githubusercontent.com/72039550/192142397-16d5e4c4-397e-4e14-90bc-4808fb3b022c.png)
+
+<br> For further queries used, kindly refer to the script attached in this repository.
 
 <hr>
 
