@@ -42,6 +42,7 @@ With the help of predefined Spark Schema, the data that is being saved in Spark 
 
 * The data is currently in the form of dataframe and to query on the same I have used the function **CreateOrReplaceTempView** which creates a virtual table from the existing dataframe. Then we can perform functions / queries within **spark.sql()** that are pretty similar to that of **regular SQL**
 <br>
+
 ![pic4](https://user-images.githubusercontent.com/72039550/192142446-0aaf8171-de86-4e4a-9ecd-a0d2e26ff6f6.png)
 
 
