@@ -8,9 +8,9 @@ The idea is to extrapolate the existing data - in Jupyter Notebook / or any ide 
 
 ### Dependencies
 
-* You would require Pyodbc library ie.  pip install pyodbc
-* Kindly use Google Chrome - as this code is built on this driver.
-* Please install the following python packages using pip
+* You would require Pyodbc library ie.  **pip install pyodbc**
+* For this project, I have used Jupyter Notebook - you can also use Google Colab.
+* Please install Apache Spark (I have installed 3.3.3 version) from the below mentioned website:  https://spark.apache.org/downloads.html
 <br>
 
   ![pack](https://user-images.githubusercontent.com/72039550/192081245-d3b0c7e6-329c-454f-a141-5b23e0dafa92.png)
