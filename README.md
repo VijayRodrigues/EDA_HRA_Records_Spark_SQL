@@ -11,6 +11,8 @@ The idea is to extrapolate the existing data - in Jupyter Notebook / or any ide 
 * You would require Pyodbc library ie.  **pip install pyodbc**
 * For this project, I have used Jupyter Notebook - you can also use Google Colab.
 * Please install Apache Spark (I have installed 3.3.3 version) from the below mentioned website:  https://spark.apache.org/downloads.html
+* It's advised to have Java 8 or Java 11 for efficient use of Spark - the newer Java versions may or may not suppprt some features yet.
+* You can refer to this article to set up spark env paths and other dependencies accordingly:  https://naomi-fridman.medium.com/install-pyspark-to-run-on-jupyter-notebook-on-windows-4ec2009de21f
 <br>
 
   ![pack](https://user-images.githubusercontent.com/72039550/192081245-d3b0c7e6-329c-454f-a141-5b23e0dafa92.png)
