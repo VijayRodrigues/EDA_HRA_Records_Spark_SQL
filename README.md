@@ -68,7 +68,7 @@ The dataset contains structured HR-related attributes such as:
 
 ## 5. Impact of Work-Life Balance on Attrition
 - **Insight:**  
-  Employees with poor **WorkLifeBalance** might be more likely to leave. Analyzing this factor against **Attrition** can reveal whether work-life balance is a significant driver of employee turnover.
+  Employees with poor **WorkLifeBalance** might be more likely to leave. An analysis of this factor against **Attrition** can reveal whether work-life balance is a significant driver of employee turnover.
 
 ## 6. Analysis of Performance Rating vs. Attrition
 - **Insight:**  
@@ -109,6 +109,26 @@ The dataset contains structured HR-related attributes such as:
 ## 15. Job Level vs. Attrition
 - **Insight:**  
   Employees in higher job levels might have lower attrition rates, as they may have more stability, benefits, and responsibilities. Analyzing **JobLevel** and **Attrition** could uncover patterns between seniority and retention.
+
+## 16. Role in Department and Attrition
+- **Insight:**  
+  Certain departments may have specific roles that tend to experience higher attrition. By analyzing the **Role in Department**, you can identify departments or specific job roles that may need retention strategies.
+
+## 17. Shift Work and Attrition
+- **Insight:**  
+  Employees working shifts (e.g., **NightShift**) may have different attrition patterns compared to day-shift workers. A deeper dive into **Shift** and **Attrition** could provide insights into whether shift work affects retention.
+
+## 18. Absence Frequency and Attrition
+- **Insight:**  
+  Frequent absenteeism may be a precursor to employee attrition. By examining the **Absence** rates of employees who left the company, you can see if there’s a correlation between absenteeism and turnover.
+
+## 19. Relationship Between Years At Company and Attrition
+- **Insight:**  
+  The longer employees stay at the company, the less likely they are to leave. **YearsAtCompany** could be a key feature to model attrition, where shorter tenures indicate a higher likelihood of leaving.
+
+## 20. Job Involvement and Attrition
+- **Insight:**  
+  Employees who are highly involved in their jobs might be less likely to leave. Analyzing **JobInvolvement** against **Attrition** can help identify whether more engaged employees tend to stay longer in the company.
 
 ---
 
